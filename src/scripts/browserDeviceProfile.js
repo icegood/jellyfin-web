@@ -213,6 +213,10 @@ function testCanPlayMkv(videoTestElement) {
         return true;
     }
 
+    if (browser.chrome || browser.android) {
+        return true;
+    }
+
     if (videoTestElement.canPlayType('video/x-matroska').replace(/no/, '')
             || videoTestElement.canPlayType('video/mkv').replace(/no/, '')) {
         return true;
