@@ -168,6 +168,12 @@ const config = {
             }
         }
     },
+    performance: {
+        hints: 'warning',
+        maxAssetSize: 100 * 1024 * 1024, // 100 MiB
+        maxEntrypointSize: 2 * 1024 * 1024 // 2 MiB
+    },
+
     module: {
         rules: [
             {
